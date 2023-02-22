@@ -1,11 +1,12 @@
-let letters = [];
-let word = "racecare";
+let letters = []; // this is the stack
+let word = "aAaaAAA";
 
 let reverse = "";
 
 for (let i = 0; i < word.length; i++) {
   letters.push(word[i]);
 }
+
 console.log(letters);
 
 for (let i = 0; i < word.length; i++) {
@@ -13,6 +14,6 @@ for (let i = 0; i < word.length; i++) {
 }
 
 console.log(reverse);
-if (reverse === word) {
-  console.log(word + "is a palindrome");
+if (reverse.toLowerCase === word.toLowerCase) {
+  console.log(word + " is a palindrome");
 } else console.log("not a palndrome");
